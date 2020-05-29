@@ -55,6 +55,7 @@ class Reader(object):
 		self._csvReader = csv.reader(
 			self._file,
 			dialect="excel",
+			delimiter="@",
 		)
 		self._resDir = filename + "_res"
 		if isdir(self._resDir):
